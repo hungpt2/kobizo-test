@@ -1,0 +1,71 @@
+.kbz-information {
+    @apply min-h-740 flex justify-center items-center relative overflow-hidden;
+
+    &__background {
+        @apply absolute w-full h-full bg-no-repeat bg-center bg-cover;
+    }
+    &__content {
+        @apply absolute text-white w-full;
+    }
+    &__title {
+        @apply mx-auto;
+        @apply text-center font-lato font-bold;
+        font-size: 30px;
+        line-height: 36px;
+        @media (min-width: 640px) {
+            font-size: 50px;
+            line-height: 60px;
+        }
+    }
+    &__description {
+        @apply mt-5 opacity-80 max-w-540;
+        @apply text-center font-lato font-normal;
+        @apply text-sm sm:text-lg leading-4 sm:leading-6 mx-4 sm:mx-auto;
+    }
+    &__button {
+        height: 52px;
+        background: #007AFF;
+        box-shadow: 0px 36.0889px 14.1218px rgba(153, 153, 153, 0.01), 0px 20.3981px 12.5527px rgba(153, 153, 153, 0.05), 0px 8.62996px 8.62996px rgba(153, 153, 153, 0.09), 0px 2.35363px 4.70725px rgba(153, 153, 153, 0.1), 0px 0px 0px rgba(153, 153, 153, 0.1);
+        @apply mt-15 mx-auto px-10 rounded-md;
+        @apply flex justify-center items-center;
+    }
+    &__button-text {
+        @apply font-lato font-semibold text-xl leading-6;
+    }
+    &__copyright {
+        @apply mt-15;
+        @apply font-lato font-normal text-sm font-normal leading-4 text-center opacity-80;
+    }
+    &__footer {
+        @apply px-4 md:px-8 xl:px-0;
+        @apply max-w-1074 mx-auto w-full;
+        @apply flex justify-between items-center;
+
+        @apply flex-col md:flex-row mt-10 md:mt-20 gap-10;
+    }
+    &__logo {
+        @apply h-10 min-h-10;
+    }
+    &__services {
+        @apply justify-center w-full max-w-1074;
+        @apply flex justify-center items-center gap-12;
+
+        @apply relative md:absolute;
+    }
+    &__service-item {
+        @apply cursor-pointer leading-5 text-base font-normal font-lato;
+    }
+    &__socials {
+        gap: 25px;
+        @apply flex justify-end items-center;
+    }
+    &__social-item {
+        width: 45px;
+        height: 45px;
+        border-color: rgba(255, 255, 255, .5);
+        @apply border-2 rounded-full flex justify-center items-center;
+    }
+    &__social-icon {
+        @apply h-3.5 w-3.5;
+    }
+}

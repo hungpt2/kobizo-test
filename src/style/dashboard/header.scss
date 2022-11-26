@@ -1,0 +1,45 @@
+.kbz-header {
+    @apply bg-primary h-16;
+    @apply px-4 md:px-8 xl:px-0;
+
+    &__wrapper {
+        @apply max-w-1200 mx-auto h-full;
+        @apply flex gap-4 items-center;
+    }
+    &__left-side {
+        @apply flex justify-start items-center flex-1;
+    }
+    &__right-side {
+        @apply flex items-center md:flex-1 gap-4;
+        @apply justify-end sm:justify-between;
+    }
+    &__services {
+        @apply justify-start items-center;
+        @apply hidden sm:flex;
+        @apply gap-10 md:gap-20;
+    }
+    &__support {
+        @apply flex justify-end items-center gap-1 text-white gap-4;
+    }
+    &__languages {
+        @apply flex justify-end items-center;
+    }
+
+    &__service-item {
+        @apply font-lato font-medium text-sm leading-4 text-white cursor-pointer;
+    }
+    &__lang-label {
+        @apply font-inter font-bold text-sm leading-4 ml-1.5;
+    }
+    &__search {
+        @apply cursor-pointer;
+    }
+
+    &__logo {
+        @apply hidden sm:block;
+    }
+    &__logo-mini {
+        height: 26px;
+        @apply block sm:hidden;
+    }
+}

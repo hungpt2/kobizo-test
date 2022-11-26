@@ -1,0 +1,28 @@
+.kbz-solutions {
+    @apply mt-15 ml-0 md:ml-25 text-center md:text-left relative overflow-hidden;
+
+    &__background {
+        @apply absolute right-0;
+    }
+    &__button {
+        width: 340px;
+        height: 60px;
+        font-size: 27px;
+        line-height: 33px;
+        background: #007AFF;
+        @apply text-white font-lato font-semibold rounded-lg;
+    }
+
+    &__description {
+        max-width: 660px;
+        margin-top: 26px;
+        font-size: 40px;
+        line-height: 48px;
+        color: #061A56;
+        @apply font-lato font-medium;
+        @apply mb-15 md:mb-48 px-10 md:px-0;
+        @media (max-width: 1024px) {
+            @apply mx-auto;
+        }
+    }
+}

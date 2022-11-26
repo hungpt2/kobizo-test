@@ -1,0 +1,99 @@
+.kbz-banner {
+    height: 420px;
+    @apply relative flex justify-center items-center;
+
+    @media (min-width: 640px) {
+        height: 500px;
+    }
+
+    @media (min-width: 1024px) {
+        height: 590px;
+    }
+
+    &__background {
+        @apply absolute w-full h-full bg-no-repeat bg-center bg-cover;
+    }
+    &__content {
+        padding-top: 60px;
+        padding-bottom: 43px;
+        @apply absolute text-white w-full h-full px-4 sm:px-8 lg:px-16;
+        @apply flex justify-between items-center;
+
+        @media (min-width: 640px) {
+            padding-top: 80px;
+            padding-bottom: 57px;
+        }
+
+        @media (min-width: 1024px) {
+            padding-top: 120px;
+            padding-bottom: 86px;
+        }
+    }
+    &__action-btn {
+        width: 46px;
+        height: 46px;
+        min-width: 46px;
+        background: rgba(0, 122, 255, 0.18);
+        border-color: #007AFF;
+        @apply rounded-full border-2 flex justify-center items-center cursor-pointer;
+
+        &--disabled {
+            @apply cursor-not-allowed;
+        }
+    }
+    &__next {
+        @apply rotate-180;
+    }
+    &__casual {
+        max-width: 800px;
+        @apply mx-4 sm:mx-10 lg:mx-20 w-full h-full overflow-hidden;
+        @apply flex flex-col;
+    }
+    &__casual-wrapper {
+        @apply relative flex-1;
+    }
+    &__casual-item {
+        @apply absolute transition-all;
+    }
+    &__casual-status {
+        margin-top: 90px;
+        @apply flex justify-center items-center gap-2.5;
+    }
+    &__casual-status-item {
+        background: rgba(0, 122, 255, 0.3);
+        @apply w-3.5 h-3.5 rounded-full;
+
+        &--active {
+            background-color: #007AFF;
+        }
+    }
+
+    &__box-title {
+        font-size: 30px;
+        line-height: 36px;
+        @apply font-lato font-medium text-center;
+
+        @media (min-width: 640px) {
+            font-size: 40px;
+            line-height: 48px;
+        }
+
+        @media (min-width: 1024px) {
+            font-size: 60px;
+            line-height: 72px;
+        }
+    }
+    &__box-description {
+        @apply font-lato font-normal text-center opacity-65 my-6;
+        @apply text-sm sm:text-base lg:text-xl lg:leading-6;
+    }
+    &__box-button {
+        width: 170px;
+        background: #007AFF;
+        box-shadow: 0px 27.3561px 10.7045px rgba(153, 153, 153, 0.01), 0px 15.4621px 9.51515px rgba(153, 153, 153, 0.05), 0px 6.54167px 6.54167px rgba(153, 153, 153, 0.09), 0px 1.78409px 3.56818px rgba(153, 153, 153, 0.1), 0px 0px 0px rgba(153, 153, 153, 0.1);
+        @apply rounded-md flex justify-center items-center h-10 mx-auto cursor-pointer;
+    }
+    &__box-button-icon {
+        @apply ml-1.5;
+    }
+}

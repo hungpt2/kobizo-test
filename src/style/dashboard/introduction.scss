@@ -1,0 +1,51 @@
+.kbz-introduction {
+    @apply flex flex-col-reverse text-white;
+
+    @media (min-width: 1024px) {
+        @apply flex-row;
+    }
+
+    &__cover {
+        min-width: 37.5%;
+    }
+    &__bg {
+        max-height: 400px;
+        @apply w-full;
+    }
+    &__content {
+        @apply bg-primary flex justify-start items-center flex-1 py-10 lg:py-0;
+    }
+    &__content-wrapper {
+        max-width: 717px;
+        @apply mx-auto px-8 lg:ml-24;
+    }
+    &__logo-mini {
+        height: 46px;
+        margin-right: 14px;
+    }
+    &__title {
+        font-size: 20px;
+        line-height: 24px;
+        @apply font-lato font-semibold;
+        @apply flex justify-start items-center;
+        @media (min-width: 1024px) {
+            font-size: 40px;
+            line-height: 48px;
+        }
+    }
+    &__description {
+        font-size: 14px;
+        line-height: 17px;
+        @apply font-lato font-normal opacity-65 my-5;
+        @media (min-width: 1024px) {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    &__button {
+        width: 246px;
+        height: 38px;
+        background: #007AFF;
+        border-radius: 5px;
+    }
+}

@@ -1,0 +1,13 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './AppLayout.scss';
+@import './font.scss';
+
+@import './dashboard/header.scss';
+@import './dashboard/banner.scss';
+@import './dashboard/introduction.scss';
+@import './dashboard/services.scss';
+@import './dashboard/solutions.scss';
+@import './dashboard/information.scss';
